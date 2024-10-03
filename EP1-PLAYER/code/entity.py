@@ -13,7 +13,7 @@ class Entity(pygame.sprite.Sprite):
         self.keylistener = keylistener
         self.spritesheet = pygame.image.load("../../assets/sprite/hero_01_red_m_walk.png")
         self.image = Tool.split_image(self.spritesheet, 0 ,0, 24, 32)
-        self.position: pygame.math.Vector2 = pygame.math.Vector2(x + 16, y)
+        self.position: pygame.math.Vector2 = pygame.math.Vector2(x, y)
         self.rect: pygame.Rect = self.image.get_rect()
         self.all_images = self.get_all_images()
         self.index_image = 0
@@ -92,7 +92,8 @@ class Entity(pygame.sprite.Sprite):
 
 
 
-    def align_hitbox(self):
+    def align_hitbox(self) -> None:
+        self.position.x += 16
         self.rect.center = self.position
         self.hitbox.midbottom = self.rect.midbottom
         while self.hitbox.x % 16 != 0:
