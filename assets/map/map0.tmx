@@ -3,7 +3,7 @@
  <tileset firstgid="1" source="tileset/tileset_pokemon_sdk.tsx"/>
  <tileset firstgid="4257" source="tileset/tileset4g.tsx"/>
  <group id="6" name="object">
-  <objectgroup id="8" name="collision">
+  <objectgroup id="8" name="collision" visible="0">
    <object id="10" name="collision" x="720" y="1584.33" width="47" height="15.6667"/>
    <object id="11" name="collision" x="688" y="1504" width="31.6667" height="62.3333"/>
    <object id="12" name="collision" x="704.667" y="1488.33" width="63.3333" height="15.6667"/>

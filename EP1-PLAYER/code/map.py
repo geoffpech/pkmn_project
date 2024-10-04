@@ -28,9 +28,9 @@ class Map:
        self.group = pyscroll.PyscrollGroup(map_layer=self.map_layer, default_layer=7)
 
        if switch.name.split(" ")[0] == "map":
-           self.map_layer.zoom = 3
+           self.map_layer.zoom = 2
        else:
-           self.map_layer.zoom = 3.75
+           self.map_layer.zoom = 2
 
        self.switchs = []
        self.collisions = []
